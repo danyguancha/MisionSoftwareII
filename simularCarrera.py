@@ -11,10 +11,10 @@ class Carrera:
         while True:
             for vehiculo in vehiculos:
                 vehiculo.acelerar()
-                vehiculo.nivelGasolina -= 10
-                if vehiculo.nivelGasolina <=0:
+                vehiculo.nivelGasolina -= 1
+                if vehiculo.nivelGasolina <=0 :
                     print(f"El vehiculo {vehiculo.marca} {vehiculo.modelo} se quedo sin gasolina")
-                    continue  
+                    return  
                 if vehiculo.velocidadActual <= vehiculo.velocidadMaxima:
                     distanciaRecorrida += vehiculo.velocidadActual
                 if distanciaRecorrida >= distancia:

@@ -28,14 +28,3 @@ class Coche(Vehiculo):
     #definimos el metodo frenar el cual disminuye la velocidad del vehiculo en 5 km/h
     def frenar(self):
         self.velocidadActual -= 5
-
-    
-            
-         
-    
-    @activarTurbo
-    def hh(self):
-        return "hola mundo"
-
-
-            
